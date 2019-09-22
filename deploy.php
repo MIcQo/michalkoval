@@ -17,6 +17,13 @@
         'git submodule status',
     );
 
+    if(file_exists(__DIR__ . "/composer.json"))
+        $commands[] = 'composer install';
+
+    if(file_exists(__DIR__ . "/package.json")) {
+        $commands[] = 'npm install';
+    }
+
     // exec commands
     $output = '';
     foreach($commands AS $command){
