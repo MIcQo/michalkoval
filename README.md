@@ -1,2 +1,3 @@
 # michalkoval
-Personal site - bootstrap
+
+Personal site
