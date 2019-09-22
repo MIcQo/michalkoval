@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>michalkoval.sk</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(/background.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
         .button-bg {
             background-image: linear-gradient(to right, #9800f8 0%, #0a37e1 50%, #00d3ef 100%);
@@ -31,7 +35,7 @@
         }
 
         .cls-1, .cls-2{
-            animation: slowRotateMirror 30s linear infinite;
+            animation: slowRotateMirror 40s linear infinite;
             transform-origin: center;
         }
 
@@ -64,7 +68,7 @@
     </style>
 </head>
 <body>
-    <div class="flex w-screen h-screen items-center justify-center flex-col my-4 md:my-0">
+    <div class="flex w-screen h-screen items-center justify-center flex-col my-4 md:my-0 text-white">
         <div style="max-width: 225px; margin: 0 auto;">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504.52 551">
                 <defs>
@@ -82,12 +86,20 @@
                     }
                     </style>
                     <linearGradient id="linear-gradient" x1="45.66" y1="426.73" x2="401.88" y2="70.51" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#00d2ff"/>
-                    <stop offset="1" stop-color="#00d9ae"/>
+                        <stop offset="0" stop-color="#0b1dcf">
+                            <animate attributeName="stop-color" values="#0b1dcf;#73a7ed;#0b1dcf" dur="20s" repeatCount="indefinite"  /> 
+                        </stop>
+                    
+                        <stop offset="1" stop-color="#73a7ed">
+                            <animate attributeName="stop-color" values="#73a7ed;#0b1dcf;#73a7ed" dur="20s" repeatCount="indefinite"  /> 
+                        </stop>
                     </linearGradient>
                     <linearGradient id="linear-gradient-2" x1="492.41" y1="233.59" x2="8.2" y2="233.59" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#003bdf"/>
-                    <stop offset="0.79" stop-color="#9800f8"/>
+                        <stop offset="0" stop-color="#36D1DC"> </stop>
+                            <animate attributeName="stop-color" values="#36D1DC;#5B86E5;#36D1DC" dur="20s" repeatCount="indefinite"  /> 
+                        <stop offset="0.79" stop-color="#5B86E5">
+                            <animate attributeName="stop-color" values="#5B86E5;#36D1DC;#5B86E5" dur="20s" repeatCount="indefinite"  /> 
+                        </stop>
                     </linearGradient>
                 </defs>
                 <g>
@@ -100,13 +112,13 @@
                 </g>
                 </svg>
         </div>
-              
-        <h1 class="uppercase text-xl md:text-4xl text-black font-bold mb-6 mt-10">AJAJÁJ, NIEKDE SA STALA CHYBA</h1>
+
+        <h1 class="uppercase text-xl md:text-3xl text-white font-bold mb-6 mt-10 tracking-widest">AJAJÁJ, Na stránke sa pracuje</h1>
         <p class="text-sm md:text-lg mb-4 font-normal">Ľutujeme, ale v tejto chvíli sa tu nič nenachádza.</p>
 
         <a href="https://google.com/" class="mt-10 py-3 px-8 button-bg text-white rounded-full font-bold">Pokračovať</a>
 
-        <span class="text-gray-400 mt-12">&copy; 2019 by Michal Koval. All rights reserved.</span>
+        <span class="text-white mt-12 text-sm">&copy; 2019 by Michal Koval. All rights reserved.</span>
     </div>
 </body>
 </html>
